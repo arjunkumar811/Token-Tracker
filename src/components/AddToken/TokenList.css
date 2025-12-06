@@ -1,0 +1,92 @@
+.token-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.token-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  border-bottom: 1px solid #3a3a3c;
+  min-height: 60px;
+  box-sizing: border-box;
+}
+
+.token-list-item:last-child {
+  border-bottom: none;
+}
+
+.token-list-item:hover {
+  background-color: rgba(58, 58, 60, 0.3);
+}
+
+.token-list-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.token-list-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.token-list-name {
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.token-list-symbol {
+  font-weight: 400;
+  color: #6B7280;
+}
+
+.token-add-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6B7280;
+  transition: color 0.15s;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.token-add-btn:hover {
+  color: #a9e851;
+}
+
+.token-selected-indicators {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.star-icon {
+  font-size: 18px;
+  line-height: 1;
+  color: #a9e851;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6B7280;
+  font-size: 14px;
+}

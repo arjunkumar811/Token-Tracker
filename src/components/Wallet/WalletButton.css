@@ -1,0 +1,75 @@
+.wallet-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.connect-wallet-btn {
+  padding: 10px 16px;
+  background-color: #a9e851;
+  color: #111827;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.connect-wallet-btn:hover {
+  background-color: #98d842;
+}
+
+.connect-wallet-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.wrong-network-btn {
+  padding: 10px 16px;
+  background-color: #EF4444;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.wrong-network-btn:hover {
+  background-color: #DC2626;
+}
+
+.account-btn {
+  padding: 10px 16px;
+  background-color: #3a3a3c;
+  color: #E5E7EB;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+.account-btn:hover {
+  background-color: #4a4a4c;
+}
+
+@media (max-width: 768px) {
+  .connect-wallet-btn,
+  .wrong-network-btn,
+  .account-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .connect-wallet-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+}

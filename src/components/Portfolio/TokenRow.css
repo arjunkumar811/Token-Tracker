@@ -1,0 +1,276 @@
+.token-row {
+  border-bottom: 1px solid #3a3a3c;
+  transition: background-color 0.15s;
+}
+
+.token-row:hover {
+  background-color: #323234;
+}
+
+.token-row td {
+  padding: 16px 24px;
+  vertical-align: middle;
+}
+
+.token-row td:first-child {
+  padding-left: 24px;
+}
+
+.token-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.token-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.token-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.token-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.token-symbol {
+  font-size: 14px;
+  color: #6B7280;
+  font-weight: 400;
+}
+
+.token-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #E5E7EB;
+}
+
+.token-change {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.token-change.positive {
+  color: #10B981;
+}
+
+.token-change.negative {
+  color: #EF4444;
+}
+
+.token-sparkline {
+  width: 100px;
+  height: 40px;
+}
+
+.token-holdings {
+  font-size: 14px;
+  color: #E5E7EB;
+}
+
+.holdings-value {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.15s;
+  display: inline-block;
+}
+
+.holdings-value:hover {
+  background-color: #4B5563;
+}
+
+.holdings-edit-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.holdings-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.holdings-input {
+  width: 80px;
+  padding: 8px 28px 8px 12px;
+  border: 1px solid #a9e851;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background-color: #2a2a2c;
+  color: #9CA3AF;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.holdings-input::-webkit-outer-spin-button,
+.holdings-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.holdings-input::placeholder {
+  color: #9CA3AF;
+}
+
+.holdings-dropdown-icon {
+  position: absolute;
+  right: 10px;
+  color: #9CA3AF;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+.holdings-save-btn {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid #a9e851;
+  border-radius: 6px;
+  color: #a9e851;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.holdings-save-btn:hover {
+  background-color: #a9e851;
+  color: #111827;
+}
+
+.token-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #E5E7EB;
+}
+
+.token-actions {
+  position: relative;
+  width: 48px;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #6B7280;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.15s;
+  letter-spacing: 2px;
+}
+
+.menu-button:hover {
+  color: #E5E7EB;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+}
+
+.action-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #3a3a3c;
+  border: 1px solid #4a4a4c;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 4px;
+  min-width: 150px;
+  z-index: 10;
+  margin-top: 4px;
+}
+
+.action-menu button {
+  width: 100%;
+  padding: 10px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #E5E7EB;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-menu button svg {
+  flex-shrink: 0;
+}
+
+.action-menu button:hover {
+  background-color: #4a4a4c;
+}
+
+.action-menu .edit-button {
+  color: #E5E7EB;
+}
+
+.action-menu .remove-button {
+  color: #EF4444;
+}
+
+.action-menu .remove-button:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+@media (max-width: 768px) {
+  .token-row td {
+    padding: 16px 0;
+  }
+
+  .token-row td:first-child {
+    padding-left: 16px;
+  }
+
+  .token-info {
+    gap: 10px;
+  }
+
+  .token-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .token-name {
+    font-size: 13px;
+  }
+
+  .token-symbol {
+    font-size: 13px;
+  }
+
+  .token-value {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .menu-button {
+    padding: 4px 6px;
+  }
+
+  .action-menu {
+    right: 16px;
+    min-width: 160px;
+  }
+}
