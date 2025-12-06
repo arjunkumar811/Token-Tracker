@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API_BASE_URL = '/api/api/v3';
+// Use direct API in production, proxy in development
+const API_BASE_URL = import.meta.env.PROD 
+  ? 'https://api.coingecko.com/api/v3'
+  : '/api/api/v3';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
